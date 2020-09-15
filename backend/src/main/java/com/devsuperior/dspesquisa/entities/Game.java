@@ -28,6 +28,7 @@ public class Game implements Serializable {
 	
 	@ManyToOne @JoinColumn(name = "genre_id")
 	private Genre genre;
+	
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
 	
