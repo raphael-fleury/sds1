@@ -6,7 +6,7 @@ import Chart from 'react-apexcharts';
 import axios from 'axios';
 import { buildBarSeries, getGenderChartData, getPlatformChartData } from './helpers';
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-raphael.herokuapp.com';
 
 type PieChartData = {
     labels: string[];
