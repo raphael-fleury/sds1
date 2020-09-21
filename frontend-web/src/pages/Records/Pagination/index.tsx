@@ -15,7 +15,7 @@ const Pagination = ({ totalPages = 0, goToPage, activePage }: Props) => {
             {paginationItems.map(item => (
                 <button
                     key={item}
-                    className={`pagination-item ${activePage == item ? 'active' : 'inactive'}`}
+                    className={`pagination-item ${activePage === item ? 'active' : 'inactive'}`}
                     onClick={() => goToPage(item)} 
                 >
                     {item + 1}
